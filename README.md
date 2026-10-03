@@ -1,4 +1,12 @@
+
+
 # ChargeFind — EV Charging Station Finder & Slot Booking
+
+Case Study - 44
+
+Name - Vijaykarthik T K
+
+Roll - 150096724008
 
 Flutter app to find EV charging stations, check slot availability, book slots, and track spending. Postgres backend for stations/bookings/reviews; Hive for device-local prefs only.
 
@@ -13,14 +21,14 @@ Flutter app to find EV charging stations, check slot availability, book slots, a
 
 ## Tech stack
 
-| Layer | Choice |
-|---|---|
-| UI | Flutter, Material |
-| State | `flutter_riverpod` |
-| Backend | Postgres (`postgres` package, PG16) |
-| Local prefs | Hive (`favorites`, `vehicle`, `prefs` boxes) |
-| Map/location | `flutter_map`, `latlong2`, `geolocator` |
-| Notifications | `flutter_local_notifications` + `timezone` |
+| Layer         | Choice                                             |
+| ------------- | -------------------------------------------------- |
+| UI            | Flutter, Material                                  |
+| State         | `flutter_riverpod`                               |
+| Backend       | Postgres (`postgres` package, PG16)              |
+| Local prefs   | Hive (`favorites`, `vehicle`, `prefs` boxes) |
+| Map/location  | `flutter_map`, `latlong2`, `geolocator`      |
+| Notifications | `flutter_local_notifications` + `timezone`     |
 
 Entry: `lib/main.dart` → inits Hive → `ReminderService.init()` → `ProviderScope(ChargeFindApp)` → `RootShell` (or `OnboardingScreen` on first run).
 
